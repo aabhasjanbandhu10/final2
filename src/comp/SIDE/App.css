@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.link_text {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+}
+
+main {
+  width: 100%;
+}
+
+.sidebar {
+  background: #084ca4; /* Keep the sidebar background color */
+  color: #fff;
+  width: 80px; /* Adjusted for initial collapsed state */
+  transition: all 0.5s;
+}
+
+.icon {
+  margin-left: 5px;
+  display: flex;
+}
+
+.menu-item {
+  display: flex;
+  color: #fff;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.bars {
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+  padding-bottom: 5px;
+  height: 100%;
+}
+
+.link {
+  display: flex;
+  color: #fff;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+}
+
+.menu-item:hover {
+  background: #ebeff0;
+  color: #000;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.active {
+  background-color: transparent; /* No background color by default */
+  color: inherit; /* Ensure text color doesn't change */
+}
+
+.sidebar.expanded .active {
+  background-color: orange; /* Background color when sidebar is expanded */
+  color: #000; /* Text color when sidebar is expanded */
+}
+
+.icon, .link_text {
+  font-size: 15px;
+}
+
+.sidebar.expanded {
+  width: 220px; /* Adjusted width for expanded state */
+}
